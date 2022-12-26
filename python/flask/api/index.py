@@ -11,16 +11,16 @@
 #     return 'About'
 
 from flask import Flask, request
-from flask_cors import CORS
-from werkzeug.utils import secure_filename
-import os
-import json
-from ocr.ocr import save_file, predict
+# from flask_cors import CORS
+# from werkzeug.utils import secure_filename
+# import os
+# import json
+# from ocr.ocr import save_file, predict
 
-import os
-os.environ['KMP_DUPLICATE_LIB_OK']='True'
+# import os
+# os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
-import requests
+# import requests
 
 
 
@@ -34,14 +34,14 @@ class_labels = 'imagenet_classes.json'
 app = Flask(__name__)
 
 # Allow 
-CORS(app)
+# CORS(app)
 
-# Path for uploaded images
-UPLOAD_FOLDER = 'data/'
+# # Path for uploaded images
+# UPLOAD_FOLDER = 'data/'
 
-# Allowed file extransions
-ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+# # Allowed file extransions
+# ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
+# app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route("/")
 def hello():
