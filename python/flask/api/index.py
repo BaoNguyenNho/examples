@@ -9,35 +9,6 @@
 # @app.route('/about')
 # def about():
 #     return 'About'
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@datmar8th 
-datmar8th
-/
-vietnamese-ocr
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-vietnamese-ocr/backend/app.py /
-@datmar8th
-datmar8th done
-Latest commit 572bdf0 yesterday
- History
- 1 contributor
-88 lines (65 sloc)  2.07 KB
 
 from flask import Flask, request
 from flask_cors import CORS
@@ -127,18 +98,3 @@ def remove_file(path):
 
 if __name__ == "__main__":
 	app.run(debug=True, threaded=False)
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-vietnamese-ocr/app.py at master · datmar8th/vietnamese-ocr
